@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:background="@android:color/transparent"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/titleTxtView"
+            android:layout_width="271dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="135dp"
+            android:layout_weight="0"
+            android:fontFamily="@font/aldrich"
+            android:gravity="center_vertical"
+            android:text="@string/auctionit"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="132dp"
+            android:layout_height="49dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="#DC7633"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/registerUser"
+        android:layout_width="341dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="439dp"
+        android:layout_marginEnd="45dp"
+        android:background="#F29720"
+        android:gravity="center"
+        android:text="@string/register" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutLName"
+        android:layout_width="380dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="120dp" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/lastName"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="120dp"
+            android:layout_marginStart="17dp"
+            android:ems="1"
+            android:hint="@string/lastname1"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutFName"
+        android:layout_width="380dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="180dp" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/firstName"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="120dp"
+            android:layout_marginStart="17dp"
+            android:ems="1"
+            android:hint="@string/firstname1"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutEmail"
+        android:layout_width="380dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="240dp" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="120dp"
+            android:layout_marginStart="17dp"
+            android:drawableStart="@drawable/ic_markunread_black_24dp"
+            android:ems="1"
+            android:hint="@string/email2"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+</RelativeLayout>

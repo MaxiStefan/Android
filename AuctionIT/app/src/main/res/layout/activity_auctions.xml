@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AuctionsActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/titleTxtView"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_weight="0"
+            android:fontFamily="@font/aldrich"
+            android:gravity="center"
+            android:text="@string/auctionit"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="-1dp"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/roundedbutton"
+            android:fontFamily="@font/alike_angular"
+            android:text="@string/home"
+            android:textColor="#DC7633"
+            android:textAllCaps="false"
+            android:drawableTop="@drawable/ic_home_black_24dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_alignStart="@+id/home"
+            android:layout_marginStart="103dp"
+            android:background="@drawable/roundedbutton"
+            android:fontFamily="@font/alike_angular"
+            android:text="@string/search"
+            android:textColor="#DC7633"
+            android:textAllCaps="false"
+            android:drawableTop="@drawable/ic_search_black_24dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/auctions"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_alignStart="@+id/search"
+            android:layout_marginStart="104dp"
+            android:background="@drawable/roundedbutton"
+            android:fontFamily="@font/alike_angular"
+            android:text="@string/auctions"
+            android:textColor="#DC7633"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/account"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_alignStart="@+id/auctions"
+            android:layout_marginStart="105dp"
+            android:background="@drawable/roundedbutton"
+            android:fontFamily="@font/alike_angular"
+            android:text="@string/account"
+            android:textColor="#DC7633"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:id="@+id/currency"
+            style="@style/spinner_style"
+            android:layout_width="86dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="495dp" />
+
+        <EditText
+            android:id="@+id/estimateValue"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="224dp"
+            android:layout_marginBottom="581dp"
+            android:hint="@string/estimated_value1" />
+
+        <EditText
+            android:id="@+id/startingBid"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="583dp"
+            android:hint="@string/starting_bid1" />
+
+        <EditText
+            android:id="@+id/artTitle"
+            android:layout_width="363dp"
+            android:layout_height="43dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="645dp"
+            android:text="@string/title" />
+
+        <Spinner
+            android:id="@+id/itemClass"
+            style="@style/spinner_style"
+            android:layout_width="306dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="55dp"
+            android:layout_marginBottom="438dp" />
+
+        <Button
+            android:id="@+id/date"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="300dp"
+            android:layout_marginBottom="493dp"
+            android:text="@string/set_date" />
+
+        <Button
+            android:id="@+id/createObject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="51dp"
+            android:layout_marginBottom="69dp"
+            android:text="@string/done" />
+
+        <Button
+            android:id="@+id/loadPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="278dp"
+            android:layout_marginBottom="75dp"
+            android:text="@string/load_photo" />
+
+        <TextView
+            android:id="@+id/finalDate"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="110dp"
+            android:layout_marginBottom="494dp"
+            android:text="@string/date"
+            android:textSize="35dp" />
+
+        <EditText
+            android:id="@+id/editTextURL"
+            android:layout_width="302dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="62dp"
+            android:layout_marginBottom="381dp"
+            android:ems="10"
+            android:hint="@string/img_url" />
+
+        <ImageView
+            android:id="@+id/imageViewPhoto"
+            android:layout_width="287dp"
+            android:layout_height="178dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="71dp"
+            android:layout_marginBottom="178dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

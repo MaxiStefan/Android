@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+<RelativeLayout
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_alignParentTop="true"
+    android:gravity="center"
+    android:layout_gravity="center">
+    <TextView
+        android:id="@+id/titleTxtView"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_weight="0"
+        android:fontFamily="@font/aldrich"
+        android:gravity="center"
+        android:text="@string/auctionit"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+</RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="-1dp"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/roundedbutton"
+            android:fontFamily="@font/alike_angular"
+            android:text="@string/home"
+            android:textColor="#DC7633"
+            android:textAllCaps="false"
+            android:drawableTop="@drawable/ic_home_black_24dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_alignStart="@+id/home"
+            android:layout_marginStart="103dp"
+            android:background="@drawable/roundedbutton"
+            android:fontFamily="@font/alike_angular"
+            android:text="@string/search"
+            android:textColor="#DC7633"
+            android:textAllCaps="false"
+            android:drawableTop="@drawable/ic_search_black_24dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/auctions"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_alignStart="@+id/search"
+            android:layout_marginStart="104dp"
+            android:background="@drawable/roundedbutton"
+            android:fontFamily="@font/alike_angular"
+            android:text="@string/auctions"
+            android:textColor="#DC7633"
+            android:textAllCaps="false"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/account"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_alignStart="@+id/auctions"
+            android:layout_marginStart="105dp"
+            android:background="@drawable/roundedbutton"
+            android:fontFamily="@font/alike_angular"
+            android:text="@string/account"
+            android:textColor="#DC7633"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="625dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="54dp"
+        android:padding="12dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="393dp"
+            android:layout_height="603dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/darker_gray" />
+    </RelativeLayout>
+
+</RelativeLayout>

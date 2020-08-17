@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/paintImage"
+        android:layout_width="wrap_content"
+        android:layout_height="179dp"
+        android:layout_margin="10dp"
+        app:srcCompat="@drawable/paintings" />
+
+    <TextView
+        android:id="@+id/paintHeading"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:fontFamily="@font/alike_angular"
+        android:gravity="center|top"
+        android:text="@string/textview"
+        android:textStyle="bold" />
+</LinearLayout>

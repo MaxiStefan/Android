@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <ImageView
+        android:id="@+id/imgView_detail"
+        android:layout_width="match_parent"
+        android:layout_height="224dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="507dp"
+        android:layout_weight="1"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="198dp"
+        android:layout_height="72dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="207dp"
+        android:layout_marginBottom="432dp"
+        android:layout_weight="1"
+        android:text="@string/textview"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtValue"
+        android:layout_width="202dp"
+        android:layout_height="75dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="203dp"
+        android:layout_marginBottom="360dp"
+        android:text="@string/textview2"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtBid"
+        android:layout_width="204dp"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="205dp"
+        android:layout_marginBottom="234dp"
+        android:text="@string/textview3"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="206dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="201dp"
+        android:layout_marginBottom="291dp"
+        android:text="@string/textview4"
+        android:textSize="20sp" />
+</RelativeLayout>
