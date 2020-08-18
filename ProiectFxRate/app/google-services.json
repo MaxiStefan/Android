@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "170848247202",
+    "firebase_url": "https://fxrates-fcb8b.firebaseio.com",
+    "project_id": "fxrates-fcb8b",
+    "storage_bucket": "fxrates-fcb8b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:170848247202:android:fde21c5238d359735ce6fb",
+        "android_client_info": {
+          "package_name": "com.example.proiect1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "170848247202-00hl0bnmel3k3qd1poc2eqbsu6e6v226.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.proiect1",
+            "certificate_hash": "27a89a81fc7bf0eed3191c8db98443950989d7c4"
+          }
+        },
+        {
+          "client_id": "170848247202-d0fh0ice4pa2dqj3n917aqle0tqsk29i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAu5XHwLm9ATYq7NBX9Ibj7xoH_bScWY8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "170848247202-d0fh0ice4pa2dqj3n917aqle0tqsk29i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll"
+        android:gravity="center">
+
+        <com.androidplot.xy.XYPlot
+            android:id="@+id/mySimpleXYPlot"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            androidplot.title="A Simple XYPlot Example"
+            androidplot.ticksPerRangeLabel="4"
+            androidplot.ticksPerDomainLabel="2"
+            androidplot.gridPadding="4dp|4dp|4dp|4dp"
+            />
+
+    </LinearLayout>
+</ScrollView>
